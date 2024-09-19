@@ -1,0 +1,58 @@
+.contenedor{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px; 
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-areas:"header     header      header"
+                        "nav        nav         nav"
+                        "section    section     ads"
+                        "footer     footer      footer";
+}
+.contenedor .header{
+    background-color: bisque;
+    grid-column: header;
+}
+.contenedor .nav{
+    background-color: yellow;
+    grid-column: nav;
+}
+.contenedor .section{
+    background-color:azure ;
+    grid-column: section;
+    display: flex;
+}
+.contenido1{
+    background-color: red;
+    margin: 5px 5px 5px 5px;
+    width: 50%;
+}
+.contenido2{
+    background-color: red;
+    margin: 5px 5px 5px 5px;
+    width: 50%;
+
+}
+.contenedor .ads{
+    background-color:chartreuse ;
+    grid-column: ads;
+    display: flex;
+    flex-direction: column;
+}
+.pub1{
+    background-color:blue;
+    margin: 5px 5px 5px 5px;
+    height: 50%;
+}
+.pub2{
+    background-color:blue;
+    margin: 5px 5px 5px 5px;
+    height: 50%;
+}
+.contenedor .footer{
+    background-color:darkorange;
+    grid-column: footer;
+}
